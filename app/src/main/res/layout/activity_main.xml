@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="app.com.example.android.samskritabharati.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/spoken" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/holo_red_light"
+                android:text="Register"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/darker_gray"
+                android:padding="16dp"
+                android:text="Spoken Sanskrit Classes"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:paddingRight="8sp"
+                android:paddingTop="8dp"
+                android:text="Students can learn conversational Samskrit in a two hour class every day over a ten-day period. No prior knowledge of Samskrit is required."
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="32dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:drawableLeft="@drawable/ic_insert_link_black_18dp"
+                    android:drawablePadding="5dp"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:text="Website : http://samskritabharati.in/"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="email"
+                    android:drawableLeft="@drawable/ic_contact_mail_black_18dp"
+                    android:drawablePadding="5dp"
+                    android:maxLines="1"
+                    android:paddingTop="8dp"
+                    android:text="Contact : devaki.anugu@gmail.com"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoLink="map"
+                        android:drawableLeft="@drawable/ic_location_on_black_18dp"
+                        android:drawablePadding="5dp"
+                        android:maxLines="3"
+                        android:paddingTop="8dp"
+                        android:text="Address : "
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/address"
+                        android:autoLink="map"
+                        android:maxLines="3"
+                        android:paddingTop="8dp"
+                        android:text="Flat 405,\nJeedimetla Village,\nHyderabad"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@android:color/holo_red_light"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingBottom="8dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:text="Batches start on 1st of every month. Please register atleast a day before by sending an email to the above email address"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
